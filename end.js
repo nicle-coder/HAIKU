@@ -173,30 +173,63 @@ const contents = {
     `
   },
   
-  pagsusulit: {
+pagsusulit: {
     html: `
-      <div class="panimula-box">
-        <div class="panimula-inner">
-          <h2>Pagsusulit</h2>
-          <p>Upang malaman kung kayo ay mayroong natutuhan sa ating talakayan patungkol sa mga Panitikan sa Panahon ng Hapon (Haiku), ating subukin ang inyong kaalaman sa pamamagitan ng pagsagot sa pagsusulit na aking inihanda. Handa na ba kayo? Tara, simulan na natin!</p>
-          <br>
-          <p><strong>Panuto:</strong> Piliin sa loob ng kahon ang tamang salita na angkop sa bawat pahayag. Isulat ang sagot sa patlang bago ang bilang. Gumamit ng hiwalay na papel sa pagsagot.</p>
-          <br>
-          <p style="text-align: center; background: rgba(212,175,55,0.2); padding: 15px; border-radius: 8px; border: 2px solid var(--gold);">
-            <strong>Gintong Panahon</strong> • <strong>Haiku</strong> • <strong>5-7-5</strong> • <strong>Tanaga</strong> • <strong>Kigo</strong><br>
-            <strong>Kalikasan</strong> • <strong>Japan</strong> • <strong>17</strong> • <strong>Panahon ng Hapon</strong> • <strong>Makabuluhan</strong> • <strong>Imahe</strong>
-          </p>
-          <br>
-          <p>1. Ang panahon ng Hapon sa Pilipinas ay kilala rin bilang __________ dahil sa paglago ng panitikang nasusulat sa wikang Tagalog.</p>
-          <p>2. Isang tradisyunal na anyo ng maikling tula mula sa Japan ay ang __________.</p>
-          <p>3. Binubuo ang haiku ng tatlong taludtod na may bilang-pantig na __________.</p>
-          <p>4. Ang kabuuang bilang ng pantig sa isang haiku ay __________.</p>
-          <p>5. Ang haiku ay nagbigay-inspirasyon sa mga makatang Pilipino na lumikha ng __________.</p>
-          <p>6. Sa haiku, mahalaga ang tinatawag na __________, o salitang tumutukoy sa partikular na panahon.</p>
-          <p>7. Karaniwang paksa ng haiku ay ang __________, mga panahon, at simpleng karanasan sa araw-araw.</p>
-          <p>8. Ang haiku ay nakatuon sa malinaw na __________ at damdamin, hindi sa tugma.</p>
-          <p>9. Ang mga akdang patungkol sa buhay sa lalawigan gaya ng pagsasaka at pangingisda ay naging tanyag noong __________.</p>
-          <p>10. Layunin ng haiku na makuha ang isang sandali at ilarawan ito sa paraang simple ngunit __________ sa mambabasa.</p>
+      <div class="quiz-container">
+        <div class="quiz-inner">
+          <div class="quiz-header">
+            <h2>Pagsusulit</h2>
+            <p class="quiz-intro">Upang malaman kung kayo ay mayroong natutuhan sa ating talakayan patungkol sa mga Panitikan sa Panahon ng Hapon (Haiku), ating subukin ang inyong kaalaman sa pamamagitan ng pagsagot sa pagsusulit na aking inihanda. Handa na ba kayo? Tara, simulan na natin!</p>
+            <p class="quiz-intro"><strong>Panuto:</strong> Piliin sa loob ng kahon ang tamang salita na angkop sa bawat pahayag. Isulat ang sagot sa patlang.</p>
+            <p style="text-align: center; background: rgba(212,175,55,0.2); padding: 15px; border-radius: 8px; border: 2px solid var(--gold); color: #fff; font-weight: 600; margin-top: 15px;">
+              <strong>Gintong Panahon</strong> • <strong>Haiku</strong> • <strong>5-7-5</strong> • <strong>Tanaga</strong> • <strong>Kigo</strong><br>
+              <strong>Kalikasan</strong> • <strong>Japan</strong> • <strong>17</strong> • <strong>Panahon ng Hapon</strong> • <strong>Makabuluhan</strong> • <strong>Imahe</strong>
+            </p>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="1">
+            <div class="question-text">1. Ang panahon ng Hapon sa Pilipinas ay kilala rin bilang <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot"> dahil sa paglago ng panitikang nasusulat sa wikang Tagalog.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="2">
+            <div class="question-text">2. Isang tradisyunal na anyo ng maikling tula mula sa Japan ay ang <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot">.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="3">
+            <div class="question-text">3. Binubuo ang haiku ng tatlong taludtod na may bilang-pantig na <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot">.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="4">
+            <div class="question-text">4. Ang kabuuang bilang ng pantig sa isang haiku ay <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot">.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="5">
+            <div class="question-text">5. Ang haiku ay nagbigay-inspirasyon sa mga makatang Pilipino na lumikha ng <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot">.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="6">
+            <div class="question-text">6. Sa haiku, mahalaga ang tinatawag na <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot">, o salitang tumutukoy sa partikular na panahon.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="7">
+            <div class="question-text">7. Karaniwang paksa ng haiku ay ang <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot">, mga panahon, at simpleng karanasan sa araw-araw.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="8">
+            <div class="question-text">8. Ang haiku ay nakatuon sa malinaw na <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot"> at damdamin, hindi sa tugma.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="9">
+            <div class="question-text">9. Ang mga akdang patungkol sa buhay sa lalawigan gaya ng pagsasaka at pangingisda ay naging tanyag noong <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot">.</div>
+          </div>
+          
+          <div class="pagsusulit-question" data-question="10">
+            <div class="question-text">10. Layunin ng haiku na makuha ang isang sandali at ilarawan ito sa paraang simple ngunit <input type="text" class="pagsusulit-input" placeholder="Isulat ang sagot"> sa mambabasa.</div>
+          </div>
+          
+          <button class="submit-btn" id="submitPagsusulit">Suriin ang Sagot</button>
+          
+          <div class="quiz-result" id="pagsusulitResult" style="display:none;"></div>
         </div>
       </div>
     `
